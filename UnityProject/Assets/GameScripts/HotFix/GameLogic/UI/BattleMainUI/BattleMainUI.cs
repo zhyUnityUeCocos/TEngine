@@ -24,6 +24,12 @@ namespace GameLogic
         #endregion
 
         #region 事件
+
+        protected override void OnCreate()
+        {
+            
+        }
+
         #endregion
 
     }

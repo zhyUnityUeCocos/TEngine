@@ -91,3 +91,6 @@ MonoBehaviour:
   - uiElementRegex: m_tInput
     componentName: 22
     isUIWidget: 0
+  - uiElementRegex: m_progress
+    componentName: 6
+    isUIWidget: 0
