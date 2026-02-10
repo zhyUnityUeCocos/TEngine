@@ -4,7 +4,7 @@ using TEngine;
 
 namespace GameLogic
 {
-    [Window(UILayer.UI,location:"BattleMainUI")]
+    [Window(UILayer.UI,location:"UI_BattleMainUI")]
     class BattleMainUI : UIWindow
     {
         #region 脚本工具生成的代码

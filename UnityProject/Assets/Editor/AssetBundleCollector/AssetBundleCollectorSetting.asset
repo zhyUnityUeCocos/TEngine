@@ -25,16 +25,16 @@ MonoBehaviour:
     AutoCollectShaders: 1
     IgnoreRuleName: NormalIgnoreRule
     Groups:
-    - GroupName: Actor
+    - GroupName: Animation
       GroupDesc: 
       AssetTags: 
       ActiveRuleName: EnableGroup
       Collectors:
-      - CollectPath: Assets/AssetRaw/Actor
-        CollectorGUID: 9c67ce0c9edfd4e4aa1006ee39846d66
+      - CollectPath: Assets/AssetRaw/Animation
+        CollectorGUID: 01aea760533a8494299d34d63fa1a5d0
         CollectorType: 0
-        AddressRuleName: AddressByFileName
-        PackRuleName: PackDirectory
+        AddressRuleName: AddressByFolderAndFileName
+        PackRuleName: PackSeparately
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
@@ -43,19 +43,11 @@ MonoBehaviour:
       AssetTags: 
       ActiveRuleName: EnableGroup
       Collectors:
-      - CollectPath: Assets/AssetRaw/Audios/song
-        CollectorGUID: e456315a4517f054f84d3cdb755241f7
+      - CollectPath: Assets/AssetRaw/Audios
+        CollectorGUID: 8ef7a411b66e70f4cb65c2233c9a0868
         CollectorType: 0
-        AddressRuleName: AddressByFileName
-        PackRuleName: PackDirectory
-        FilterRuleName: CollectAll
-        AssetTags: 
-        UserData: 
-      - CollectPath: Assets/AssetRaw/Audios/Sound
-        CollectorGUID: be354614618cc1f43b10d5b64995c24c
-        CollectorType: 0
-        AddressRuleName: AddressByFileName
-        PackRuleName: PackDirectory
+        AddressRuleName: AddressByFolderAndFileName
+        PackRuleName: PackSeparately
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
@@ -67,33 +59,33 @@ MonoBehaviour:
       - CollectPath: Assets/AssetRaw/Configs
         CollectorGUID: dd2928019aef34248af368b99bc53bea
         CollectorType: 0
-        AddressRuleName: AddressByFileName
+        AddressRuleName: AddressByFolderAndFileName
         PackRuleName: PackDirectory
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
-    - GroupName: DLL
+    - GroupName: Effect
       GroupDesc: 
       AssetTags: 
       ActiveRuleName: EnableGroup
       Collectors:
-      - CollectPath: Assets/AssetRaw/DLL
-        CollectorGUID: 3aad79ec1ea08c24c891bd3c669d4125
+      - CollectPath: Assets/AssetRaw/Effect
+        CollectorGUID: a13dd558c3e37d546bb0255c3c841460
         CollectorType: 0
-        AddressRuleName: AddressByFileName
+        AddressRuleName: AddressByFolderAndFileName
         PackRuleName: PackDirectory
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
-    - GroupName: Effects
+    - GroupName: FBX
       GroupDesc: 
       AssetTags: 
       ActiveRuleName: EnableGroup
       Collectors:
-      - CollectPath: Assets/AssetRaw/Effects
-        CollectorGUID: 0fe175e1e1bd49a4ca71e66b6a9b7237
+      - CollectPath: Assets/AssetRaw/FBX
+        CollectorGUID: 26dd1675e7392524aa5bfb2189cec29e
         CollectorType: 0
-        AddressRuleName: AddressByFileName
+        AddressRuleName: AddressByFolderAndFileName
         PackRuleName: PackDirectory
         FilterRuleName: CollectAll
         AssetTags: 
@@ -106,7 +98,7 @@ MonoBehaviour:
       - CollectPath: Assets/AssetRaw/Fonts
         CollectorGUID: 2473375c9ee163a4b861278b38091455
         CollectorType: 0
-        AddressRuleName: AddressByFileName
+        AddressRuleName: AddressByFolderAndFileName
         PackRuleName: PackDirectory
         FilterRuleName: CollectAll
         AssetTags: 
@@ -119,8 +111,21 @@ MonoBehaviour:
       - CollectPath: Assets/AssetRaw/Materials
         CollectorGUID: 228b1547e7065d546ad0bf215fd6a276
         CollectorType: 0
-        AddressRuleName: AddressByFileName
+        AddressRuleName: AddressByFolderAndFileName
         PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: Prefab
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/AssetRaw/Prefab
+        CollectorGUID: e04dd625dc9a216469c755791d0f128b
+        CollectorType: 0
+        AddressRuleName: AddressByFolderAndFileName
+        PackRuleName: PackSeparately
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
@@ -137,16 +142,29 @@ MonoBehaviour:
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
-    - GroupName: UI
+    - GroupName: Shaders
       GroupDesc: 
       AssetTags: 
       ActiveRuleName: EnableGroup
       Collectors:
-      - CollectPath: Assets/AssetRaw/UI
-        CollectorGUID: 27e87d83814156648b58f380b834e046
+      - CollectPath: Assets/AssetRaw/Shaders
+        CollectorGUID: 2a4bceb84ed685447ace957f497eb810
         CollectorType: 0
-        AddressRuleName: AddressByFileName
-        PackRuleName: PackSeparately
+        AddressRuleName: AddressByFolderAndFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: Texture
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/AssetRaw/Texture
+        CollectorGUID: ff48c4684d17ce842a972b930b5fc9c0
+        CollectorType: 0
+        AddressRuleName: AddressByFolderAndFileName
+        PackRuleName: PackDirectory
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
@@ -155,18 +173,10 @@ MonoBehaviour:
       AssetTags: 
       ActiveRuleName: EnableGroup
       Collectors:
-      - CollectPath: Assets/AssetRaw/UIRaw/Atlas
-        CollectorGUID: 6d11fa91acc253840a648b58f23db139
+      - CollectPath: Assets/AssetRaw/UIRaw
+        CollectorGUID: 30ac6ece1d52a824986d28eb79ec7e51
         CollectorType: 0
-        AddressRuleName: AddressByFileName
-        PackRuleName: PackDirectory
-        FilterRuleName: CollectAll
-        AssetTags: 
-        UserData: 
-      - CollectPath: Assets/AssetRaw/UIRaw/Raw
-        CollectorGUID: 6bc134b912ac6bb4399ea1bec4c11636
-        CollectorType: 0
-        AddressRuleName: AddressByFileName
+        AddressRuleName: AddressByFolderAndFileName
         PackRuleName: PackDirectory
         FilterRuleName: CollectAll
         AssetTags: 

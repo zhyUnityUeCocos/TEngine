@@ -5,7 +5,7 @@ using TEngine;
 
 namespace GameLogic
 {
-	[Window(UILayer.UI, location : "MainUI")]
+	[Window(UILayer.UI, location : "UI_MainUI")]
 	public partial class MainUI
 	{
 		#region 事件
@@ -14,6 +14,7 @@ namespace GameLogic
 		{
 			Debug.Log("跳转场景");
 			GameModule.Scene.LoadSceneAsync("GameScene");
+			Close();
 		}
 
 		#endregion

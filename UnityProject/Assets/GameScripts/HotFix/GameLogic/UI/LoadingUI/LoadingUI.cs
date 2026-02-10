@@ -7,7 +7,7 @@ using DG.Tweening;
 
 namespace GameLogic
 {
-    [Window(UILayer.UI, location : "LoadingUI")]
+    [Window(UILayer.UI, location : "UI_LoadingUI")]
     public partial class LoadingUI : UIWindow
     {
         #region 脚本工具生成的代码
